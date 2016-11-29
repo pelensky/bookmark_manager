@@ -8,4 +8,5 @@ gem "data_mapper"
 gem "dm-postgres-adapter"
 gem "rspec"
 gem "capybara"
+gem "rack"
 end
