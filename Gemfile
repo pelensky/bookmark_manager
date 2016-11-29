@@ -7,6 +7,9 @@ group :test do
 gem "data_mapper"
 gem "dm-postgres-adapter"
 gem "rspec"
+gem "rspec-sinatra"
 gem "capybara"
 gem "rack"
+gem "sinatra"
+
 end
