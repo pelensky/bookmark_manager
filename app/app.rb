@@ -2,9 +2,9 @@ require './app/models/link.rb'
 require 'sinatra/base'
 
 class BookmarkManager < Sinatra::Base
-  # get '/' do
-  #   'Hello BookmarkManager!'
-  # end
+  get '/' do
+    erb :intro
+  end
 
   get '/links' do
     @links = Link.all
