@@ -6,6 +6,7 @@ feature 'Add link' do
     visit '/links/new'
     page.fill_in :url, :with => 'http://google.com'
     page.fill_in :title, :with => 'Google'
+    click_button "Submit"
     visit '/links'
     expect(page).to have_content('Google')
   end
