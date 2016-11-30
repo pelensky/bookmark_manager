@@ -18,13 +18,13 @@
         </nav>
 
         <h1> Links </h1>
-        <div>
-          <ul class='link_style' id='links'>
+        <div class='link_style'>
+          <ul id='links'>
             <% @links.each do |link| %>
-            <li>
-              Title: <%= link.title %>
-              URL: <%= link.url %>
-            </li>
+            <p>
+              <li>Title: <%= link.title  %> => 
+              URL: <%= link.url %></li>
+            </p>
             <% end %>
           </ul>
         </div>
