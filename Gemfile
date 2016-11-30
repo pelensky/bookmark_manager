@@ -9,7 +9,6 @@ group :test do
   gem "rspec"
   gem "rspec-sinatra"
   gem "capybara"
-  gem "rack"
   gem "sinatra"
 end
 
