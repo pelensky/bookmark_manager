@@ -3,16 +3,15 @@ source "https://rubygems.org"
 
 ruby '2.3.1'
 
-group :test do
-  gem "data_mapper"
-  gem "dm-postgres-adapter"
-  gem "rspec"
-  gem "rspec-sinatra"
-  gem "capybara"
-  gem "sinatra"
-end
+gem "data_mapper"
+gem "dm-postgres-adapter"
+gem "sinatra"
+gem "rspec-sinatra"
+
 
 group :test do
+  gem "rspec"
   gem "database_cleaner"
   gem "dm-transactions"
+  gem "capybara"
 end
