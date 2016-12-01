@@ -8,6 +8,7 @@ gem "dm-postgres-adapter"
 gem "sinatra"
 gem "rspec-sinatra"
 gem "pry"
+gem "rake"
 
 
 group :test do
