@@ -27,6 +27,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/tags/bubbles' do
+        @links = Link.all
     erb :'tags/bubbles'
   end
 

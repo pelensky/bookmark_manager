@@ -19,7 +19,13 @@
 
 
   <div class='view_links'>
-Bubbles
+    <% @links.each do |link| %>
+    <p>
+      <li><strong>Title: </strong> <%= link.title  %> =>
+        <strong>URL: </strong> <%= link.url %></li>
+        <strong>Tag(s): </strong> <% link.tagged_value.select do |entry| %><%= entry.tag == "bubbles" %><% end %>
+      </p>
+      <% end %>
   </div>
 
   </body>
