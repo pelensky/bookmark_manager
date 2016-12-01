@@ -25,7 +25,7 @@
       <p>
         <li><strong>Title: </strong> <%= link.title  %> =>
           <strong>URL: </strong> <%= link.url %></li>
-          <strong>Tag(s): </strong> <%= link.url %>
+          <strong>Tag(s): </strong> <% link.tag.each do |entry| %><%= entry.tag %><% end %>
         </p>
         <% end %>
       </ul>
