@@ -17,11 +17,17 @@
     </ul>
   </nav>
 
+  <form action='/tags' method='post'>
+  <label for="filter_by_tag">Filter by tag:</label>
+  <input type="text" name="filter_by_tag"></br></br>
+  <input class='button' type="submit" value="Filter">
+  </form>
+
 
   <div class='view_links'>
     <h1> BOOKMARKS </h1></br>
     <ul id='links'>
-      <% @links.each do |link| %>
+      <% @links1.each do |link| %>
       <p>
         <li><strong>Title: </strong> <%= link.title  %> =>
           <strong>URL: </strong> <%= link.url %></li>
