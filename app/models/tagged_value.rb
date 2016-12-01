@@ -1,7 +1,6 @@
 require "data_mapper"
 require "dm-postgres-adapter"
 
-
 class TaggedValue
   include DataMapper::Resource
   property :id, Serial
