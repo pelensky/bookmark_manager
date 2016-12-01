@@ -9,25 +9,26 @@
 <body>
   <nav>
     <ul>
-      <li> <a href="#">Bookmark Manager </li>
-        <li> <a href='links'>View links </a></li>
-        <li> <a href="/links/new"> Add link </li></a>
-        <li> <a href="#"> Sign up</li>
-          <li> <a href="#"> Sign in</li>
-          </ul>
-        </nav>
+      <li> <a href="/">Bookmark Manager </a></li>
+      <li> <a href='links'>View links </a></li>
+      <li> <a href="/links/new"> Add link </a></li>
+      <li > <a href="#"> Sign up </a></li>
+      <li> <a href="#"> Sign in </a></li>
+    </ul>
+  </nav>
 
-        <h1> Links </h1>
-        <div class='link_style'>
-          <ul id='links'>
-            <% @links.each do |link| %>
-            <p>
-              <li>Title: <%= link.title  %> => 
-              URL: <%= link.url %></li>
-            </p>
-            <% end %>
-          </ul>
-        </div>
 
-      </body>
-      </html>
+  <div class='view_links'>
+    <h1> BOOKMARKS </h1></br>
+    <ul id='links'>
+      <% @links.each do |link| %>
+      <p>
+        <li><strong>Title:</strong> <%= link.title  %> =>
+          <strong>URL:</strong> <%= link.url %></li>
+        </p>
+        <% end %>
+      </ul>
+    </div>
+
+  </body>
+  </html>
