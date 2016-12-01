@@ -6,6 +6,7 @@ class Link
   property :id, Serial
   property :url, String
   property :title, String
+  property :tag, String
 end
 
 DataMapper.setup(:default, ENV['DATABASE_URL'] ||  "postgres://localhost/bookmark_manager_#{ENV['RACK_ENV']}")
