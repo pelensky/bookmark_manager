@@ -1,5 +1,5 @@
 require 'spec_helper'
-require "./app/models/link.rb"
+require "./app/app.rb"
 
 feature 'Filter' do
   scenario 'User wants to search for the tag bubbles' do

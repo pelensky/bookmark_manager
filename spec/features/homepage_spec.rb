@@ -1,5 +1,5 @@
 require 'spec_helper'
-require "./app/models/link.rb"
+require "./app/app.rb"
 
 feature "Homepage" do
   scenario "User expects to see list of links after logging in" do

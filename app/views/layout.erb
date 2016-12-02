@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookmark Manager</title>
+  <link rel='stylesheet' type='text/css' href='/css/style.css'>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li> <a href="/">Bookmark Manager</a> </li>
+      <li> <a href='links'>View links </a></li>
+      <li> <a href="/links/new"> Add link </a></li>
+      <li> <a href="/users/new"> Sign up</a></li>
+      <li> <a href="#"> Sign in</a></li>
+    </ul>
+  </nav>
+  <br>
+  <% if current_user %>
+  Hey there, <%= current_user.email %>!
+  <% end %>
+  <%= yield %>
+</body>
+</html>

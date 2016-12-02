@@ -1,5 +1,5 @@
 require 'spec_helper'
-require "./app/models/link.rb"
+require "./app/app.rb"
 
 feature 'Add link' do
   scenario 'Adds link to the database' do

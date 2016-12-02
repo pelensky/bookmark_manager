@@ -1,5 +1,5 @@
 require 'spec_helper'
-require "./app/models/link.rb"
+require "./app/app.rb"
 
 feature "tag link" do
   scenario 'Adds multiple tags to the database' do
