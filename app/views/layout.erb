@@ -9,16 +9,26 @@
   <nav>
     <ul>
       <li> <a href="/">Bookmark Manager</a> </li>
-      <li> <a href='links'>View links </a></li>
+      <li> <a href='/links'>View links </a></li>
       <li> <a href="/links/new"> Add link </a></li>
       <li> <a href="/users/new"> Sign up</a></li>
-      <li> <a href="#"> Sign in</a></li>
+      <li> <a href="/sessions/new"> Sign in</a></li>
     </ul>
   </nav>
   <br>
+
   <% if current_user %>
   Hey there, <%= current_user.email %>!
+  <form action="/sessions" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" value="Sign out" name="Sign Out">
+    </form>
   <% end %>
+  <% if flash[:notice] %>
+      <div id='notice'>
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
   <% if flash[:errors] && !flash[:errors].empty? %>
   Please note the errors:
   <ul id='errors'>
